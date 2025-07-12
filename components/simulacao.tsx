@@ -98,9 +98,8 @@ export function Simulacao() {
     <section id="simulacao" className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">ASSINE AGORAsName="text-xl text-gray-600 max-w-3xl mx-auto">
-            Preencha os dados abaixo e descubra quanto você pode economizar
-          </p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">ASSINE AGORAsName="text-xl text-gray-600 max-w-3xl mx-auto"
+            Preencha os dados abaixo e descubra quanto você pode economizar</h2>
         </div>
 
         <Card className="max-w-4xl mx-auto shadow-lg">
