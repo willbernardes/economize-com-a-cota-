@@ -9,7 +9,7 @@ const cases = [
       "A Matrix atende a Toyota fornecendo energia limpa e renovável. Hoje nós temos quatro plantas industriais e todas são atendidas pela Matrix Energia. E para toda essa energia consumida, a Matrix também fornece os certificados de energia renovável - I-RECs.",
     executivo: "Renato Maldonado Simonelli",
     cargo: "Utilidades",
-    videoId: "NgzVSkoPNng",
+    videoId: "GB4ujPsOakw",
     logo: "/images/logo-toyota.jpeg",
   },
   {
@@ -18,7 +18,7 @@ const cases = [
       "Com essa parceria da Matrix, hoje nós temos o prazer de informar que a Algar Telecom é 100% de Energia Renovável.",
     executivo: "Leovaldo Martins Araújo",
     cargo: "Diretor de Infraestrutura e Engenharia na Algar Telecom",
-    videoId: "09F6reLz6ys",
+    videoId: "NgzVSkoPNng",
     logo: "/images/logo-algar.png",
   },
 ]
