@@ -19,7 +19,7 @@ export function JaProporcionamos() {
           <div className="relative">
             <div className="aspect-video bg-black/20 rounded-2xl overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/4wSJN0blG0o"
+                src="https://www.youtube.com/embed/6Yfxitb5wk8"
                 title="Matrix Energia - A energia que te movimenta"
                 className="w-full h-full"
                 frameBorder="0"
