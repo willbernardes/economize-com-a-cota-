@@ -48,7 +48,7 @@ export function ModalResultado({
 
         <div className="grid md:grid-cols-2 min-h-[500px]">
           {/* Lado Esquerdo - Informações */}
-          <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-l-2xl">
+          <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-8 rounded-l-2xl border-4 border-black">
             {/* Header Laranja com margem */}
             <div className="bg-orange-600 rounded-2xl p-6 mb-6 border-4 border-black">
               <h2 className="text-2xl font-bold mb-2">Você poderá economizar</h2>
