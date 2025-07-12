@@ -6,7 +6,6 @@ export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData()
 
-    // Extrair dados do formulário
     const dados = {
       nome: formData.get("nome") as string,
       email: formData.get("email") as string,
@@ -18,37 +17,30 @@ export async function POST(request: NextRequest) {
       dataSimulacao: new Date().toISOString(),
     }
 
-    // Extrair arquivos
     const fatura = formData.get("fatura") as File
     const documento = formData.get("documento") as File
 
-    // Criar nome da pasta baseado no nome e timestamp
     const timestamp = new Date().toISOString().replace(/[:.]/g, "-")
     const nomePasta = `${dados.nome.replace(/\s+/g, "_")}_${timestamp}`
     const caminhoSimulacao = path.join(process.cwd(), "simulacoes", nomePasta)
 
-    // Criar pasta para a simulação
     await mkdir(caminhoSimulacao, { recursive: true })
 
-    // Salvar dados em arquivo JSON
     const dadosJson = JSON.stringify(dados, null, 2)
     await writeFile(path.join(caminhoSimulacao, "dados.json"), dadosJson)
 
-    // Salvar fatura
     if (fatura && fatura.size > 0) {
       const faturaBuffer = Buffer.from(await fatura.arrayBuffer())
       const faturaExtensao = fatura.name.split(".").pop()
       await writeFile(path.join(caminhoSimulacao, `fatura.${faturaExtensao}`), faturaBuffer)
     }
 
-    // Salvar documento
     if (documento && documento.size > 0) {
       const documentoBuffer = Buffer.from(await documento.arrayBuffer())
       const documentoExtensao = documento.name.split(".").pop()
       await writeFile(path.join(caminhoSimulacao, `documento.${documentoExtensao}`), documentoBuffer)
     }
 
-    // Criar arquivo de resumo em texto
     const resumo = `
 SIMULAÇÃO DE ENERGIA SOLAR - COTA FÁCIL
 =======================================

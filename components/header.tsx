@@ -115,7 +115,7 @@ export function Header() {
             <div className="pt-4 flex justify-center">
               <Button
                 onClick={() => scrollToSection("simulacao")}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 border-2 border-orange-400"
+                className="flex items-center justify-center hidden md:block bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 border-2 border-orange-400"
               >
                 Simule Agora
               </Button>

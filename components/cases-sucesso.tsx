@@ -77,11 +77,11 @@ export function CasesSucesso() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors flex items-center justify-center">
+                    {/* <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors flex items-center justify-center">
                       <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform shadow-lg">
                         <Play className="w-6 h-6 text-gray-700 ml-1" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
