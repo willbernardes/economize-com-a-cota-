@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,49 +20,51 @@ export function Header() {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-2xl z-40 border-b border-gray-200">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Image src="/images/logo-azul.png" alt="Cota Fácil" width={180} height={60} className="h-10 w-auto" />
+          <Link href="/" aria-label="Ir para a página inicial">
+            <Image src="/images/logo-azul.png" alt="Cota Fácil" width={180} height={60} className="h-10 w-auto cursor-pointer" />
+          </Link>
         </div>
 
         {/* Desktop Menu - Centralizado */}
         <nav className="hidden md:flex items-center justify-center flex-1 space-x-8">
-          <button
-            onClick={() => scrollToSection("inicio")}
+          <Link
+            href="/#inicio"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
             Início
-          </button>
-          <button
-            onClick={() => scrollToSection("como-funciona")}
+          </Link>
+          <Link
+            href="/como-funciona"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
             Como Funciona
-          </button>
-          <button
-            onClick={() => scrollToSection("beneficios")}
+          </Link>
+          <Link
+            href="/#beneficios"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
             Benefícios
-          </button>
-          <button
-            onClick={() => scrollToSection("simulacao")}
+          </Link>
+          <Link
+            href="/#simulacao"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
             Simule Agora
-          </button>
-          <button
-            onClick={() => scrollToSection("contato")}
+          </Link>
+          <Link
+            href="/#contato"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
             Contato
-          </button>
+          </Link>
         </nav>
 
         {/* Botão à direita */}
         <Button
-          onClick={() => scrollToSection("simulacao")}
-          className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 border-2 border-orange-400"
+          asChild
+          className="hidden md:block h-11 leading-none py-0 bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 border-2 border-orange-400"
         >
-          Simule Agora
+          <Link href="/#simulacao" className="inline-flex items-center justify-center h-full px-8 leading-none">Simule Agora</Link>
         </Button>
 
         {/* Mobile Menu Button */}
@@ -82,42 +85,53 @@ export function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200">
           <nav className="container mx-auto px-4 py-6 space-y-6">
-            <button
-              onClick={() => scrollToSection("inicio")}
+            <Link
+              href="/#inicio"
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
+              onClick={() => setIsMenuOpen(false)}
             >
               Início
-            </button>
-            <button
-              onClick={() => scrollToSection("como-funciona")}
+            </Link>
+            <Link
+              href="/como-funciona"
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
+              onClick={() => setIsMenuOpen(false)}
             >
               Como Funciona
-            </button>
-            <button
-              onClick={() => scrollToSection("beneficios")}
+            </Link>
+            <Link
+              href="/#beneficios"
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
+              onClick={() => setIsMenuOpen(false)}
             >
               Benefícios
-            </button>
-            <button
-              onClick={() => scrollToSection("simulacao")}
+            </Link>
+            <Link
+              href="/#simulacao"
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
+              onClick={() => setIsMenuOpen(false)}
             >
               Simule Agora
-            </button>
-            <button
-              onClick={() => scrollToSection("contato")}
+            </Link>
+            <Link
+              href="/#contato"
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
+              onClick={() => setIsMenuOpen(false)}
             >
               Contato
-            </button>
+            </Link>
             <div className="pt-4 flex justify-center">
               <Button
-                onClick={() => scrollToSection("simulacao")}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 border-2 border-orange-400"
+                asChild
+                className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 border-2 border-orange-400"
               >
-                Simule Agora
+                <Link
+                  href="/#simulacao"
+                  className="inline-flex items-center justify-center h-11 px-8 leading-none"
+                  onClick={() => scrollToSection("simulacao")}
+                >
+                  Simule Agora
+                </Link>
               </Button>
             </div>
           </nav>

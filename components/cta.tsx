@@ -4,7 +4,7 @@ import { ArrowRight, Calculator } from "lucide-react"
 
 export function CTA() {
   return (
-    <section id="contato" className="py-20 bg-gradient-to-br from-green-600 to-blue-600">
+    <section id="cta" className="py-20 bg-gradient-to-br from-green-600 to-blue-600">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Card className="border-0 shadow-2xl">
           <CardContent className="p-12 text-center">

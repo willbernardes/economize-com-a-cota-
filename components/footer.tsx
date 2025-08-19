@@ -1,15 +1,9 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 
 export function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -34,33 +28,16 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <button onClick={() => scrollToSection("inicio")} className="hover:text-orange-500 transition-colors">
-                  Início
-                </button>
+                <Link href="/#inicio" className="hover:text-orange-500 transition-colors">Início</Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("como-funciona")}
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Como Funciona
-                </button>
+                <Link href="/como-funciona" className="hover:text-orange-500 transition-colors">Como Funciona</Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("beneficios")}
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Benefícios
-                </button>
+                <Link href="/#beneficios" className="hover:text-orange-500 transition-colors">Benefícios</Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("simulacao")}
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Simule Agora
-                </button>
+                <Link href="/#simulacao" className="hover:text-orange-500 transition-colors">Simule Agora</Link>
               </li>
             </ul>
           </div>

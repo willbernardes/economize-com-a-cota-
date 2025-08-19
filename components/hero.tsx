@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -32,11 +33,11 @@ export function Hero() {
               Simular Economia
             </Button>
             <Button
-              onClick={() => scrollToSection("como-funciona")}
+              asChild
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 text-lg font-semibold bg-transparent"
             >
-              Saiba Como Funciona
+              <Link href="/como-funciona">Saiba Como Funciona</Link>
             </Button>
           </div>
         </div>
