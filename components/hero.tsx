@@ -30,7 +30,7 @@ export function Hero() {
               onClick={() => scrollToSection("simulacao")}
               className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
             >
-              Simular Economia
+              Assine Agora
             </Button>
             <Button
               asChild

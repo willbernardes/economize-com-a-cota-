@@ -49,7 +49,7 @@ export function Header() {
             href="/#simulacao"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
-            Simule Agora
+            Assine Agora
           </Link>
           <Link
             href="/#contato"
@@ -64,7 +64,7 @@ export function Header() {
           asChild
           className="hidden md:block h-11 leading-none py-0 bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:scale-105 border-2 border-orange-400"
         >
-          <Link href="/#simulacao" className="inline-flex items-center justify-center h-full px-8 leading-none">Simule Agora</Link>
+          <Link href="/#simulacao" className="inline-flex items-center justify-center h-full px-8 leading-none">Assine Agora</Link>
         </Button>
 
         {/* Mobile Menu Button */}
@@ -111,7 +111,7 @@ export function Header() {
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
               onClick={() => setIsMenuOpen(false)}
             >
-              Simule Agora
+              Assine Agora
             </Link>
             <Link
               href="/#contato"
@@ -130,7 +130,7 @@ export function Header() {
                   className="inline-flex items-center justify-center h-11 px-8 leading-none"
                   onClick={() => scrollToSection("simulacao")}
                 >
-                  Simule Agora
+                  Assine Agora
                 </Link>
               </Button>
             </div>

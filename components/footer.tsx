@@ -37,7 +37,7 @@ export function Footer() {
                 <Link href="/#beneficios" className="hover:text-orange-500 transition-colors">Benefícios</Link>
               </li>
               <li>
-                <Link href="/#simulacao" className="hover:text-orange-500 transition-colors">Simule Agora</Link>
+                <Link href="/#simulacao" className="hover:text-orange-500 transition-colors">Assine Agora</Link>
               </li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-          <p>&copy; 2024 CotaFácil. Todos os direitos reservados.</p>
+          <p>&copy; Site criado por willian Bernardes. Todos direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Calculator } from "lucide-react"
+import Link from "next/link"
 
 export function CTA() {
   return (
@@ -16,9 +17,11 @@ export function CTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-                Simular Economia Grátis
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white" asChild>
+                <Link href="/#simulacao">
+                  Assine Agora
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               <Button
                 size="lg"
