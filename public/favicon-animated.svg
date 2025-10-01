@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .spinner { transform-origin: 32px 32px; animation: spin 1.8s linear infinite; }
+    </style>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#FF6B00"/>
+  <g class="spinner">
+    <path d="M32 10a22 22 0 0 1 15.56 6.44l-5.66 5.66A14 14 0 0 0 32 18z" fill="#fff" opacity="0.95"/>
+    <path d="M54 32a22 22 0 0 1-6.44 15.56l-5.66-5.66A14 14 0 0 0 46 32z" fill="#ffe6d6"/>
+    <path d="M32 54a22 22 0 0 1-15.56-6.44l5.66-5.66A14 14 0 0 0 32 46z" fill="#ffd1b5"/>
+    <path d="M10 32a22 22 0 0 1 6.44-15.56l5.66 5.66A14 14 0 0 0 18 32z" fill="#fff" opacity="0.8"/>
+  </g>
+</svg>

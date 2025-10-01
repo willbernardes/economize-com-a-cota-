@@ -15,7 +15,7 @@ export function Contato() {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
             <Phone className="w-12 h-12 mx-auto mb-4 text-yellow-300" />
             <h3 className="text-xl font-semibold mb-2">Telefone</h3>
-            <p className="text-orange-100">(47) 99967-8465</p>
+            <p className="text-orange-100">(34) 99833-1507</p>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">

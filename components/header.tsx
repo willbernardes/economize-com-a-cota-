@@ -40,7 +40,7 @@ export function Header() {
             Como Funciona
           </Link>
           <Link
-            href="/#beneficios"
+            href="/beneficios"
             className="text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg hover:scale-110"
           >
             Benefícios
@@ -100,7 +100,7 @@ export function Header() {
               Como Funciona
             </Link>
             <Link
-              href="/#beneficios"
+              href="/beneficios"
               className="block text-orange-500 font-bold hover:text-orange-600 transition-all duration-300 text-lg py-2 hover:scale-110"
               onClick={() => setIsMenuOpen(false)}
             >

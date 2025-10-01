@@ -1,6 +1,5 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
-import { SimulacaoInterativa } from "@/components/simulacao-interativa"
 import { ComoFuncionaEnergia } from "@/components/como-funciona-energia"
 import { EntendaTudo } from "@/components/entenda-tudo"
 import { CasesSucesso } from "@/components/cases-sucesso"
@@ -16,7 +15,6 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <SimulacaoInterativa />
       <ComoFuncionaEnergia />
       <EntendaTudo />
       <CasesSucesso />

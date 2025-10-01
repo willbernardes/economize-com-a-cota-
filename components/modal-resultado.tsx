@@ -96,7 +96,7 @@ export function ModalResultado({
             <p className="text-sm text-orange-100 text-center">
               Se ainda tem dúvidas,{" "}
               <a
-                href="https://wa.me/5547999678465"
+                href="https://wa.me/5534998331507?text=Ol%C3%A1%20Matrix!%20Vim%20do%20site%20(Modal%20Resultado%20da%20Simula%C3%A7%C3%A3o).%20Quero%20tirar%20d%C3%BAvidas%20sobre%20o%20meu%20caso."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-white transition-colors"

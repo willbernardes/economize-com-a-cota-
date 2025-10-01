@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, DollarSign, Leaf, Shield, Clock, Users } from "lucide-react"
+import { LiteYouTube } from "@/components/lite-youtube"
 
 const benefits = [
   {
@@ -38,13 +39,6 @@ export function Benefits() {
   return (
     <section id="beneficios" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Por que escolher a CotaFácil?</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubra todos os benefícios de ter energia solar por assinatura
-          </p>
-        </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
@@ -58,6 +52,23 @@ export function Benefits() {
             </Card>
           ))}
         </div>
+        
+        <div className="text-center mt-16 mb-8">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Por que escolher a CotaFácil?</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Descubra todos os benefícios de ter energia solar por assinatura
+          </p>
+        </div>
+
+        {/* Vídeo explicativo - Lite YouTube com skeleton e legenda */}
+        <div className="max-w-5xl mx-auto">
+          <LiteYouTube
+            videoId="TT8SQFEjSm4"
+            title="Por que escolher a CotaFácil?"
+            caption="Vídeo: Entenda os benefícios da energia por assinatura"
+          />
+        </div>
+        
       </div>
     </section>
   )

@@ -45,7 +45,7 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>(47) 99967-8465</li>
+              <li>(34) 99833-1507</li>
               <li>atendimento@cotafacil.com</li>
               <li>@cotafacil.bnu</li>
             </ul>
